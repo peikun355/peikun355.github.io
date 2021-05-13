@@ -7,17 +7,17 @@
   <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
   <title>Bootstrap 101 Template</title>
 
-  <!-- Bootstrap -->
+  <!-- 引入相关文件和Bootstrap文件 -->
   <link rel="stylesheet" href="css/jumbotron.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/bootstrap.js"></script>
-  <script src="js/jumbotron.js"></script>
+  <script src="js/nav-bar.js"></script>
 
 </head>
 <body>
 <!--nav页面头部分，navbar 定义导航栏 navbar-inverse是黑色主题的导航栏-->
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" id="nav">
   <!--容器，不留边距-->
   <div class="container-fluid">
     <!-- 为导航条包裹品牌图标及切换按钮 -->
@@ -35,8 +35,8 @@
 
     <!-- 要折叠的内容 -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a id="newBtn" href="javascript:void (0)">新闻资讯 <span class="sr-only">(current)</span></a></li>
+      <ul class="nav navbar-nav" id="nav-bar">
+        <li><a id="newBtn" href="#">新闻资讯 <span class="sr-only">(current)</span></a></li>
         <li><a href="#">关于我们</a></li>
         <!--向下弹出的下拉框-->
         <li class="dropdown">
@@ -53,12 +53,14 @@
           </ul>
         </li>
       </ul>
+
       <form class="navbar-form navbar-left">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="数据库服务器">
         </div>
         <button type="submit" class="btn btn-default">搜索</button>
       </form>
+
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">售后</a></li>
         <li class="dropdown">
@@ -83,7 +85,7 @@
 </div>-->
 <!--首页-->
 <header class="header" id="home">
-
+<!--轮播图部分-->
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
@@ -119,10 +121,15 @@
     </div>
   </div>
 
+  <div class="container-fluid subject">
+    1111111111111
+  </div>
+
+
   <div class="jumbotron masthead">
     <div class="container">
       <h1>Bootstrap</h1>
-      <h2>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。<br/>目前已完成首页，新闻资讯</h2>
+      <h2>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。。。<br/>目前已完成首页，新闻资讯</h2>
     </div>
   </div>
 
