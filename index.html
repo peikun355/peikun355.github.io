@@ -103,11 +103,19 @@
   <div class="jumbotron masthead">
     <div class="container">
       <h1>Bootstrap</h1>
-      <h2>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。。。<br/>目前已完成首页，新闻资讯</h2>
+      <h2 id="api">简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。。。<br/>目前已完成首页，新闻资讯</h2>
     </div>
   </div>
 
 </header>
+<button id="btn">点击获取天气</button>
 <a href="http://api.k780.com/?app=weather.today&weaId=1&appkey=10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4&format=json">跳转</a>
+<script>
+$(function(){
+  $("#btn")click(function(){
+     alert("获取天气")
+  })
+})
+</script>
 </body>
 </html>
