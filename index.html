@@ -114,6 +114,17 @@
 $(function(){
   $("#btn").click(function(){
      alert("获取天气")
+     
+$.ajax({
+    url: "http://api.k780.com/?app=weather.today&weaId=1&appkey=10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4&format=json",
+    type: "GET",
+    dataType: "json",
+    success: function(data) {
+        // data = jQuery.parseJSON(data);  //dataType指明了返回数据为json类型，故不需要再反序列化
+        $('#api').text(data)
+    }
+});
+
   })
 })
 </script>
